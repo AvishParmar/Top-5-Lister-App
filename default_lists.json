@@ -1,0 +1,32 @@
+{
+    "top5Lists": [
+        {
+            "name": "Movies",
+            "likes": 50,
+            "dislikes": 4,
+            "created": "Mon, 23 Aug 2021 03:12:53 GMT",
+            "modified": "Mon, 23 Aug 2021 03:14:31 GMT",
+            "items": [
+                "Raiders of the Lost Ark",
+                "Goodfellas",
+                "Lord of the Rings",
+                "Airplane!",
+                "Lawrence of Arabia"
+            ]
+        },
+        {
+            "name": "Pink Floyd Songs",
+            "likes": 520,
+            "dislikes": 14,
+            "created": "Sun, 22 Aug 2021 03:12:53 GMT",
+            "modified": "Sun, 22 Aug 2021 03:14:31 GMT",
+            "items": [
+                "Shine On You Crazy Diamond",
+                "Comfortably Numb",
+                "Pigs (Three Different Ones)",
+                "Echoes (Live at Pompeii)",
+                "Time"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<!--
+    Top 5 Lister
+    v 1.0
+
+    This is the single page for the Top 5 Lister, a Web application
+    that lets users create and manage Top 5 lists. Note that this version
+    is front-end only, written entirely in vanilla JaaScript with data 
+    saved to the browser's local storage.
+    
+    @author McKilla Gorilla
+    @author Avish Parmar
+-->
+
+<head>
+    <title>The Top 5 Lister</title>
+    <link href="./css/fonts/Lexend Exa/css.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/top5-modals.css" />
+    <link rel="stylesheet" type="text/css" href="./css/top5-style.css" />
+
+    <!-- THIS IS THE APP'S ENTRY POINT -->
+    <script type="module" src="./src/top5/Top5ListerApp.js"></script>
+    
+</head>
+
+<body>
+    <div id="root">
+        <div id="top5-banner">
+            The Top 5 Lister
+        </div>
+        <div id="top5-sidebar">
+            <div id="sidebar-heading">
+                <input type="button" id="add-list-button" class="top5-button" value="+" />
+                Your Lists
+            </div>
+            <div id="sidebar-list"></div>
+        </div>
+        <div id="top5-workspace">
+            <div id="workspace-edit">
+                <div id="edit-toolbar">
+                    <input type="button" id='undo-button' value="&#x21B6;" class="disabled" class="top5-button" />
+                    <input type="button" id='redo-button' value="&#x21B7;" class="disabled" class="top5-button" />
+                    <input type="button" id='close-button' value="&#x24E7;" class="disabled" class="top5-button" />
+                </div>
+                <div id="edit-numbering">
+                    <div class="item-number">1.</div>
+                    <div class="item-number">2.</div>
+                    <div class="item-number">3.</div>
+                    <div class="item-number">4.</div>
+                    <div class="item-number">5.</div>
+                </div>
+                <div id="edit-items">
+                    <div id='item-1' class="top5-item" draggable = "true" ></div>
+                    <div id='item-2' class="top5-item" draggable = "true" ></div>
+                    <div id='item-3' class="top5-item" draggable = "true" ></div>
+                    <div id='item-4' class="top5-item" draggable = "true" ></div>
+                    <div id='item-5' class="top5-item" draggable = "true" ></div>
+                </div>
+            </div>
+        </div>
+        <div id="top5-statusbar"></div>
+
+        <div class="modal" id="delete-modal" data-animation="slideInOutLeft">
+            <div class="modal-dialog">
+                <header class="dialog-header">
+                    Delete <span id="delete-list-span"></span> list?
+                </header>
+                <button id="dialog-confirm-button" class="modal-button">Confirm</button>
+                <button id="dialog-cancel-button" class="modal-button">Cancel</button>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

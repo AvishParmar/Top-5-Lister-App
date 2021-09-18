@@ -1,0 +1,215 @@
+:root {
+  /* 
+        FIRST WE'LL DEFINE OUR SWATCHES, i.e. THE COMPLEMENTARY
+        COLORS THAT WE'LL USE TOGETHER IN MULTIPLE PLACES THAT
+        TOGETHER WILL MAKE UP A GIVEN THEME
+    */
+  --swatch-foundation: #eeeedd; 
+  --swatch-primary: #e6e6e6; 
+  --swatch-complement: #e1e4cb;
+  --swatch-contrast: #111111; 
+  --swatch-accent: #669966; 
+  --swatch-status: #123456;
+  --my-font-family: "Robaaaoto";
+  --bounceEasing: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+}
+
+body {
+  background-color: var(--swatch-foundation);
+}
+
+#root {
+  background-color: var(--swatch-primary);
+  font-family: "Lexend Exa";
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  height:90%;
+  top: 5%;
+}
+
+#top5-banner {
+  position:absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 10%;
+  text-align:center;
+  background-image: linear-gradient(to bottom,         
+  #b8b808, #636723);
+  color: white;
+  font-size: 48pt;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+#top5-sidebar {
+  position:absolute;
+  left: 0%;
+  top: 10%;
+  width: 30%;
+  height: 80%;
+  background-color: var(--swatch-primary);
+}
+
+#top5-workspace {
+  position:absolute;
+  left: 30%;
+  top: 10%;
+  width: 70%;
+  height: 80%;
+  background-color: var(--swatch-accent);
+}
+
+#top5-statusbar {
+  position: absolute;
+  left: 0%;
+  top: 90%;
+  width: 100%;
+  height: 10%;
+  font-size: 40px;
+  font-family: "Lexend Exa";
+  text-align: center;
+  background-color: #ffa07a;
+  
+
+}
+
+#sidebar-heading {
+  position:absolute;
+  left:0%;
+  top:0%;
+  width:100%;
+  height:10%;
+  text-align:center;
+  font-size: 24pt;
+  font-weight: bold;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#add-list-button {
+  float:left;
+}
+
+#sidebar-list {
+  position:absolute;
+  left:0%;
+  top:10%;
+  width:100%;
+  height:90%;
+  display:flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+.list-card, .selected-list-card, .unselected-list-card {
+  font-size: 18pt;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+
+.selected-list-card {
+  background-color: var(--swatch-accent);
+  color: white;
+}
+
+.selected-list-card:hover {
+  background-color: black;
+  color: white;
+}
+
+.unselected-list-card:hover {
+  background-color: black;
+  color: white;
+}
+
+.unselected-list-card {
+  background-color: var(--swatch-complement);
+}
+
+.list-card-button {
+  float:right;
+  font-size:18pt;
+}
+
+#workspace-home, #workspace-edit {
+  position:absolute;
+  left:0%;
+  top:0%;
+  width:100%;
+  height:100%;
+}
+
+
+#edit-toolbar {
+  position:absolute;
+  left:0%;
+  top:0%;
+  width:100%;
+  height:10%;
+  background-color: var(--swatch-primary);
+}
+
+.top5-button {
+  font-size:36pt;
+  border-width: 0px;
+}
+
+#edit-numbering {
+  position:absolute;
+  left:0%;
+  top:10%;
+  width:20%;
+  height: 90%;
+  background-color: var(--swatch-status);
+}
+
+#edit-items {
+  position:absolute;
+  left:20%;
+  top:10%;
+  width:80%;
+  height: 90%;
+  background-color: var(--swatch-primary);
+}
+
+.item-number, .top5-item { 
+  display:flex;
+  align-items: center;
+  font-size: 24pt;
+  height:20%;
+}
+
+.item-number {
+  justify-content: center;
+  width:100%;
+  border: 1px 0px 1px 1px;
+  border-color:black;
+  background-color: linen;
+  color:black;
+}
+
+input {
+  font-size:20pt;
+}
+
+.top5-item {
+  text-align: left;
+  width:95%;
+  padding-left:5%;
+  background-color: var(--swatch-complement);
+}
+
+.disabled {
+  background-color: lightgray;
+}
+
+.disabled:hover {
+  color: var(--swatch-neutral);
+}
